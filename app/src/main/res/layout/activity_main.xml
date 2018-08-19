@@ -1,0 +1,1620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rellayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/header" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            style="@style/scrollbar_shape_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:background="@android:color/white"
+            android:paddingBottom="64dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/search" />
+
+                        <TextView
+                            android:id="@+id/txt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/search" />
+
+                        <CheckBox
+                            android:id="@+id/ch1"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/setting" />
+
+                        <TextView
+                            android:id="@+id/txt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/settings" />
+
+                        <CheckBox
+                            android:id="@+id/ch2"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/phone" />
+
+                        <TextView
+                            android:id="@+id/txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/phone" />
+
+                        <CheckBox
+                            android:id="@+id/ch3"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/calendar" />
+
+                        <TextView
+                            android:id="@+id/txt4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/calendar" />
+
+                        <CheckBox
+                            android:id="@+id/ch4"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/downloads" />
+
+                        <TextView
+                            android:id="@+id/txt5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/downloads" />
+
+                        <CheckBox
+                            android:id="@+id/ch5"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/emails" />
+
+                        <TextView
+                            android:id="@+id/txt6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/email" />
+
+                        <CheckBox
+                            android:id="@+id/ch6"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="36dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/weather" />
+
+                        <TextView
+                            android:id="@+id/txt7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/weather" />
+
+                        <CheckBox
+                            android:id="@+id/ch7"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/files" />
+
+                        <TextView
+                            android:id="@+id/txt8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/files" />
+
+                        <CheckBox
+                            android:id="@+id/ch8"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/radio" />
+
+                        <TextView
+                            android:id="@+id/txt9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/radio" />
+
+                        <CheckBox
+                            android:id="@+id/ch9"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/music" />
+
+                        <TextView
+                            android:id="@+id/txt10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/music" />
+
+                        <CheckBox
+                            android:id="@+id/ch10"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/movie" />
+
+                        <TextView
+                            android:id="@+id/txt11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/videos" />
+
+                        <CheckBox
+                            android:id="@+id/ch11"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/game" />
+
+                        <TextView
+                            android:id="@+id/txt12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/game" />
+
+                        <CheckBox
+                            android:id="@+id/ch12"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="36dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/contacts" />
+
+                        <TextView
+                            android:id="@+id/txt13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/contacts" />
+
+                        <CheckBox
+                            android:id="@+id/ch13"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/calculator" />
+
+                        <TextView
+                            android:id="@+id/txt14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/calculator" />
+
+                        <CheckBox
+                            android:id="@+id/ch14"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/google_play" />
+
+                        <TextView
+                            android:id="@+id/txt15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/play_store" />
+
+                        <CheckBox
+                            android:id="@+id/ch15"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/recorder" />
+
+                        <TextView
+                            android:id="@+id/txt16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/sound_recorder" />
+
+                        <CheckBox
+                            android:id="@+id/ch16"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/clock" />
+
+                        <TextView
+                            android:id="@+id/txt17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/clock" />
+
+                        <CheckBox
+                            android:id="@+id/ch17"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/camera" />
+
+                        <TextView
+                            android:id="@+id/txt18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/camera" />
+
+                        <CheckBox
+                            android:id="@+id/ch18"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="36dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/weather" />
+
+                        <TextView
+                            android:id="@+id/txt19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/weather" />
+
+                        <CheckBox
+                            android:id="@+id/ch19"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/files" />
+
+                        <TextView
+                            android:id="@+id/txt20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/files" />
+
+                        <CheckBox
+                            android:id="@+id/ch20"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/radio" />
+
+                        <TextView
+                            android:id="@+id/txt21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/radio" />
+
+                        <CheckBox
+                            android:id="@+id/ch21"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/music" />
+
+                        <TextView
+                            android:id="@+id/txt22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/music" />
+
+                        <CheckBox
+                            android:id="@+id/ch22"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/movie" />
+
+                        <TextView
+                            android:id="@+id/txt23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/videos" />
+
+                        <CheckBox
+                            android:id="@+id/ch23"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/game" />
+
+                        <TextView
+                            android:id="@+id/txt24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/game" />
+
+                        <CheckBox
+                            android:id="@+id/ch24"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/scrollView"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundcorner"
+                android:text="@string/save"
+                android:textColor="#fff"
+                android:textSize="26sp"
+                android:onClick="save"
+                android:elevation="4dp"
+                android:translationZ="2dp"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rellayout"
+        app:srcCompat="@drawable/arrow" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rellayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/question"
+        android:onClick="save"/>
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".MainActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/rellayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/header" />
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                style="@style/scrollbar_shape_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:background="@android:color/white"
+                android:paddingBottom="64dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="fill_horizontal"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="fill_horizontal"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/search" />
+
+                            <TextView
+                                android:id="@+id/txt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/search" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch1"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/setting" />
+
+                            <TextView
+                                android:id="@+id/txt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/settings" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch2"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/phone" />
+
+                            <TextView
+                                android:id="@+id/txt3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/phone" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch3"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/calendar" />
+
+                            <TextView
+                                android:id="@+id/txt4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/calendar" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch4"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/downloads" />
+
+                            <TextView
+                                android:id="@+id/txt5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/downloads" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch5"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/emails" />
+
+                            <TextView
+                                android:id="@+id/txt6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/email" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch6"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/weather" />
+
+                            <TextView
+                                android:id="@+id/txt7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/weather" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch7"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/files" />
+
+                            <TextView
+                                android:id="@+id/txt8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/files" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch8"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/radio" />
+
+                            <TextView
+                                android:id="@+id/txt9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/radio" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch9"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/music" />
+
+                            <TextView
+                                android:id="@+id/txt10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/music" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch10"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/movie" />
+
+                            <TextView
+                                android:id="@+id/txt11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/videos" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch11"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/game" />
+
+                            <TextView
+                                android:id="@+id/txt12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/game" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch12"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/contacts" />
+
+                            <TextView
+                                android:id="@+id/txt13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/contacts" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch13"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/calculator" />
+
+                            <TextView
+                                android:id="@+id/txt14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/calculator" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch14"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/google_play" />
+
+                            <TextView
+                                android:id="@+id/txt15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/play_store" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch15"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/recorder" />
+
+                            <TextView
+                                android:id="@+id/txt16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/sound_recorder" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch16"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/clock" />
+
+                            <TextView
+                                android:id="@+id/txt17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/clock" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch17"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/camera" />
+
+                            <TextView
+                                android:id="@+id/txt18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/camera" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch18"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="24dp"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/weather" />
+
+                            <TextView
+                                android:id="@+id/txt19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/weather" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch19"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/files" />
+
+                            <TextView
+                                android:id="@+id/txt20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/files" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch20"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/radio" />
+
+                            <TextView
+                                android:id="@+id/txt21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/radio" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch21"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/music" />
+
+                            <TextView
+                                android:id="@+id/txt22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/music" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch22"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/movie" />
+
+                            <TextView
+                                android:id="@+id/txt23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/videos" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch23"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/game" />
+
+                            <TextView
+                                android:id="@+id/txt24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/game" />
+
+                            <com.uniquestudio.library.CircleCheckBox
+                                android:id="@+id/ch24"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:animation_duration="100"
+                                app:background_color="#fff"
+                                app:border_color="@color/colorAccent"
+                                app:tick_color="@color/colorPrimary" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignBottom="@+id/scrollView"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundcorner"
+                    android:text="@string/save"
+                    android:textColor="#fff"
+                    android:textSize="26sp"
+                    android:onClick="save"
+                    android:elevation="4dp"
+                    android:translationZ="2dp"
+                    />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="32dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rellayout"
+            app:srcCompat="@drawable/arrow" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rellayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/question"
+            android:onClick="save"/>
+
+    </android.support.constraint.ConstraintLayout>
+    -->
+
+
+
+
+
+
+
+
+
+

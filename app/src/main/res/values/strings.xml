@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">amin</string>
+    <string name="search">جستجو</string>
+    <string name="settings">تنظیمات</string>
+    <string name="phone">تلفن</string>
+    <string name="calendar">تقویم</string>
+    <string name="downloads">بارگیری ها</string>
+    <string name="email">ایمیل</string>
+    <string name="contacts">مخاطبین</string>
+    <string name="calculator">ماشین حساب</string>
+    <string name="play_store">Play فروشگاه</string>
+    <string name="sound_recorder">ضبط کننده صدا</string>
+    <string name="clock">ساعت</string>
+    <string name="camera">دوربین</string>
+    <string name="weather">آب و هوا</string>
+    <string name="files">فایل ها</string>
+    <string name="radio">رادیو</string>
+    <string name="music">موسیقی</string>
+    <string name="videos">فیلم</string>
+    <string name="game">بازی</string>
+    <string name="save">ثبت</string>
+
+</resources>
